@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Porucite</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<script>
+function myFunction() {
+    var txt;
+    if (confirm("Postupak porudzbina jos uvek nije sredjen!")) {
+        txt = document.getElementById("demo").innerHTML;
+    } else {
+        txt = document.getElementById("demo").innerHTML;
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</head>
+
+<body>
+<div id="logo">
+<a href="index.html" class="naslovna">
+<img src="logo2.png" alt="pocetna" width="450" height="135"></a>
+</div>
+
+  <div id="header">
+    
+    <div id="meni">
+    	<ul>
+            <li><a href="slicice.html">O nama</a></li>
+            <li><a href="porucite.html">Poručite</a></li>
+             <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="zanimljivo.html">Zanimljivosti</a></li>
+            <li><a href="kontakti.html">Kontakt</a></li>
+        </ul>  
+    </div><!--meni-->
+</div><!--heder-->
+<div style="clear:both"></div>
+
+<div id="glavni">
+<div id="sadrzaj">
+<h2> SITNI KOLAČIĆI</h2>
+
+  <div id="prvi">
+      <img src="slike/Cookie-Stackers.jpg" alt="Šareni kolačići" title="Šareni kolačići" /> 
+      <p> ŠARENI KOLAČIĆI</p>
+      <a href="#" onclick="myFunction()" id="demo"><span>detaljnije...</span></a>
+      
+    </div>
+      <div id="drugi">
+            <img src="slike/Copy-of-IMG_6106.jpg" alt="Punjene vanilice" title="Punjene vanilice" /> 
+      <p> PUNJENE VANILICE</p>
+    <a href="#" onclick="myFunction()" id="demo"><span>detaljnije...</span></a>            
+      </div>
+    <div style="clear:both"></div> 
+       
+        <h2> MAFINI</h2>
+        <div id="treci">
+            <img src="slike/Fruit-cupcakes.jpg" alt="Voćni mafini" title="Voćni mafini" /> 
+      <p> VOĆNI MAFINI</p>
+    <a href="#" onclick="myFunction()" id="demo"><span>detaljnije...</span></a>
+    </div>
+            <div id="cetvrti">
+           <img src="slike/263331154_1374303766.jpg" alt="Mafini sa dekoracijom" title="Mafini sa dekoracijom" />
+      <p> DEKORISANI MAFINI</p>
+    <a href="#" onclick="myFunction()" id="demo"><span>detaljnije...</span></a>
+      </div>
+    <div style="clear:both"></div> 
+  
+ <h2> TORTE</h2>
+        
+<div id="treci">
+            <img src="slike/wedding-nvcakes.jpg" alt="Svadbene torte" title="Svadbene torte" /> 
+      <p> SVADBENE TORTE</p>
+    <a href="#" onclick="myFunction()" id="demo"><span>detaljnije...</span></a>
+    </div>
+            <div id="cetvrti">
+           <img src="slike/10852841365_3c396acd1f_b.jpg" alt="Rođendanske torte" title="Rođendanske torte" />
+      <p> ROĐENDANSKE TORTE</p>
+    <a href="#" onclick="myFunction()" id="demo"><span>detaljnije...</span></a>
+      </div>
+    <div style="clear:both"></div>
+            
+    </div><!--sadrzaj-->
+  	
+   
+</div><!--glavni-->
+
+    <div id="footer_copyright">
+        	<p>Copyright &copy; tortica.rs	2013</p>
+      </div>
+ 
+</body>
+</html>

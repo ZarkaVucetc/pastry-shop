@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC>
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerija</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="logo">
+<a href="index.html" class="naslovna">
+<img src="logo2.png" alt="pocetna" width="450" height="135"></a>
+         </div>
+
+  <div id="header">
+    <div id="meni">
+    	<ul>
+            <li><a href="slicice.html">O nama</a></li>
+            <li><a href="porucite.html">Poručite</a></li>
+             <li><a href="galerija.html">Galerija</a></li>
+            <li><a href="zanimljivo.html">Zanimljivosti</a></li>
+            <li><a href="kontakti.html">Kontakt</a></li>
+        </ul>  
+    </div><!--meni-->
+</div><!--heder-->
+<div style="clear:both"></div>
+
+<div id="glavni">
+  
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="slike/img1.jpg" align="center" style="width="640" height="480"">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="slike/img2.jpg" style="width="640" height="480"">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="slike/img3.jpg" style="width="640" height="480"">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+  
+</div><!--glavni-->
+
+    <div id="footer_copyright">
+          <p>Copyright &copy; tortica.rs  2013</p>
+      </div>
+ 
+</body>
+</html>
